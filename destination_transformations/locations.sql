@@ -7,11 +7,11 @@ SELECT
   site.notes AS description,
   site.email,
   site_service.languages AS languages,
-  '' AS latitude,
-  '' AS longitude,
+--   '' AS latitude,
+--   '' AS longitude,
   name,
-  '' AS transportation,
-  '' AS virtual,
+--   '' AS transportation,
+--   '' AS virtual,
   site.url AS website
 
 FROM site
