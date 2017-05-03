@@ -52,6 +52,9 @@ SELECT
   site.volunteer_id AS site_volunteer_id,
   site.changed_date AS site_changed_date,
   site.changed_time AS site_changed_time,
-  site.active_record AS site_active_record
+  site.active_record AS site_active_record,
+  site.deleted AS site_deleted,
+  site.county AS site_county,
+  site.agency_addresses_linked AS site_agency_addresses_linked
 FROM site
 WHERE site.deleted IS NULL

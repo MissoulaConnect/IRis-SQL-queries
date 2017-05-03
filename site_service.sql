@@ -52,7 +52,11 @@ SELECT
   site_service.volunteer_id AS site_service_volunteer_id,
   site_service.changed_date AS site_service_changed_date,
   site_service.changed_time AS site_service_changed_time,
-  site_service.active_record AS site_service_active_record
+  site_service.active_record AS site_service_active_record,
+  site_service.deleted AS site_service_deleted,
+  site_service.county AS site_service_county,
+  site_service.agency_addresses_linked AS site_service_agency_addresses_linked
+
 FROM site
 LEFT JOIN site_service ON site.site_id = site_service.site_id
 WHERE site.deleted IS NULL
